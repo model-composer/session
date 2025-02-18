@@ -1,0 +1,14 @@
+{
+    "name": "model/session",
+    "description": "Basic session interface",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Domenico Giambra",
+            "email": "zorinik@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Model\\Session\\": "src/"}
+    }
+}
