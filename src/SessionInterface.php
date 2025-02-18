@@ -7,4 +7,6 @@ interface SessionInterface
 	public function has(string $key): bool;
 
 	public function set(string $key, mixed $value): void;
+
+	public function delete(string $key): void;
 }

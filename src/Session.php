@@ -30,4 +30,10 @@ class Session implements SessionInterface
 		$this->init();
 		$_SESSION[$key] = $value;
 	}
+
+	public function delete(string $key): void
+	{
+		$this->init();
+		unset($_SESSION[$key]);
+	}
 }
