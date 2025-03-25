@@ -9,7 +9,8 @@ class Session implements SessionInterface
 		if ($this->initialized)
 			return;
 
-		session_start();
+		if (session_status() !== PHP_SESSION_ACTIVE)
+			session_start();
 		$this->initialized = true;
 	}
 
